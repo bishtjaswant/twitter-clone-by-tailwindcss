@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tailwind clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="bg-white dark:bg-dim-900  ">
+
+    <div class=" container mx-auto min-h-screen flex xl:max-w-[1200px]">
+
+
+
+        <!-- ==================Start left part  section===================== -->
+
+        <div class="w-20  flex flex-col xl:w-1/5 xl:pr-4">
+
+            <!-- logo -->
+            <a href="" class=" flex justify-center items-center xl:justify-start text-blue-500 mt-5">
+                <i class="fa-brands fa-twitter text-4xl	"></i>
+            </a>
+
+            <!-- ==================Start navbar  section===================== -->
+
+            <nav class="mt-5">
+                <a href="" class=" active-link mb-5">
+                    <i class="fa-solid fa-house text-xl"></i>
+                    <span class="hidden xl:block capitalize font-bold">home</span>
+                </a>
+
+                <a href="" class="link mb-3">
+                    <i class="fa-solid fa-hashtag text-xl"></i>
+                    <span class="icon-text">explore</span>
+                </a>
+
+                <a href="" class="link mb-3">
+                    <i class="fa-solid fa-bell text-xl"></i>
+                    <span class="icon-text">Notifications</span>
+                </a>
+                <a href="" class="link mb-3">
+                    <i class="fa-solid fa-envelope text-xl"></i>
+                    <span class="icon-text">Messages</span>
+                </a>
+                <a href="" class="link mb-3">
+                    <i class="fa-solid fa-bookmark text-xl"></i>
+                    <span class="icon-text">Bookmarks</span>
+                </a>
+                <a href="" class="link mb-3">
+                    <i class="fa-solid fa-list-ul text-xl"></i>
+                    <span class="icon-text">Lists</span>
+                </a>
+                <a href="" class="link mb-3">
+                    <i class="fa-solid fa-user text-xl"></i>
+                    <span class="icon-text">Profile</span>
+                </a>
+                <a href="" class="link mb-12">
+                    <i class="fa-solid fa-ellipsis text-xl"></i>
+                    <span class="icon-text">More</span>
+                </a>
+
+            </nav>
+            <!-- =================End navbar section ========================  -->
+
+
+            <!-- tweet icon  -->
+            <a href="" class="btn-primary h-8 w-8 xl:w-full rounded-full">
+                <i class="fa-solid fa-feather text-sm xl:text-xl block xl:mr-4 xl:ml-0 xl:hidden"></i>
+                <span class="icon-text hidden xl:block">Tweet</span>
+            </a>
+
+
+            <!-- user profile with username -->
+            <div class=" cursor-pointer w-14 xl:w-full mx-auto mt-auto flex gap-2  items-center rounded-full p-2">
+                <img src="./assets/img/sonu.jpg" class="w-10 h-10 rounded-full" alt="">
+                <div class="hidden xl:flex flex-col">
+                    <h4 class="capitalize text-gray-800 dark:text-white font-bold text-sm">jaswant singh</h4>
+                    <p class=" capitalize text-gray-400 text-sm">@jaswant-dev</p>
+                </div>
+                <i
+                    class="fa-solid fa-chevron-down text-gray-800 dark:text-white text-sm hidden xl:flex items-center xl:ml-4 "></i>
+            </div>
+            <!-- user profile with username -->
+
+
+        </div>
+        <!-- =================End left part section ========================  -->
+
+
+        <!-- ==================Start midddle part  section===================== -->
+        <div class="w-full xl:w-1/2 h-screen overflow-y-auto">
+            <div
+                class="sticky top-0 flex justify-between items-center  border dark:border-gray-700 border-gray-200 px-4 py-3   bg-white dark:bg-dim-900 ">
+                <h4 class="dark:text-white capitalize">home</h4>
+                <i class="fa-brands fa-twitter  text-lg text-blue-500 	"></i>
+            </div>
+
+            <!-- ==================Start chat input  section===================== -->
+
+            <div class="p-5 mt-5 border dark:border-gray-700 border-gray-200   bg-white dark:bg-dim-900 ">
+                <div class="flex items-start gap-3  justify-start">
+                    <img src="./assets/img/sonu.jpg" alt="" class="w-10 h-10 object-cover rounded-full">
+                    <textarea name="" id=""
+                        class="w-full h-16 resize-none pl-2 bg-transparent text-white focus:outline-none"
+                        placeholder="what's happening...... "></textarea>
+                </div>
+
+                <div class="flex flex-row xl:justify-between xl:items-center xl:gap-1 mt-4">
+
+                    <div class="w-full flex xl:items-center gap-4 xl:gap-6">
+                        <i class="text-blue-500 fa-solid fa-image cursor-pointer text-sm xl:text-lg"></i>
+                        <i class="text-blue-500 fa-brands fa-git cursor-pointer text-sm xl:text-lg"></i>
+                        <i
+                            class="text-blue-500 fa-solid fa-square-poll-horizontal cursor-pointer text-sm xl:text-lg"></i>
+                        <i class="text-blue-500 fa-solid fa-face-smile cursor-pointer text-sm xl:text-lg"></i>
+                        <i class="text-blue-500 fa-solid fa-business-time  cursor-pointer text-sm xl:text-lg"></i>
+                    </div>
+                    <a href="" class="btn-primary w-20 self-start   xl:h-10 xl:w-32">tweet</a>
+                </div>
+
+            </div>
+
+            <!-- =================End chat input section ========================  -->
+
+
+            <!-- ==================Start show unread tweet ===================== -->
+            <div class="p-5 mt-5 border dark:border-gray-700 border-gray-200  ">
+                <p class=" text-center text-blue-500 capitalize text-sm xl:text-lg">show 9 tweets</p>
+            </div>
+            <!-- =================End show unread tweet ========================  -->
+
+
+
+            <!-- ==================Start user tweets  section===================== -->
+            <div class=" border border-gray-200 dark:border-dim-200 cursor-pointer pb-4">
+                <div class="flex  items-center p-4 pb-0">
+                    <img src="./assets/img/sonu.jpg" alt="" class="w-10 h-10 rounded-full">
+                    <div class="flex xl:flex-row flex-col">
+                        <p
+                            class="ml-2 flex flex-shrink-0 text-sm xl:text-lg items-center font-medium text-gray-800 dark:text-white">
+                            jaswant singh</p>
+                        <span class="ml-2 text-sm leading-5 text-gray-400 font-bold">@jaswant-dev . Nov 2023</span>
+                    </div>
+                </div>
+                <div class="px-4 xl:pl-16 ">
+                    <p class=" text-gray-800 dark:text-white  w-full xl:text-lg  mt-5 text-sm">Lorem ipsum dolor sit
+                        amet,
+                        consectetur
+                        adipisicing elit. Vel molestiae veniam doloremque blanditiis quibusdam voluptate, ipsam, quia
+                        ullam similique officiis doloribus.
+                        <br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem earum alias laudantium.
+                        Iusto quam asperiores velit veritatis aspernatur.
+                        <a href="" class="text-blue-500">#mistake</a>
+                        <br><br>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+
+                    </p>
+
+                    <img class=" w-full rounded-2xl border border-gray-600 my-3 mr-2"
+                        src="https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8="
+                        alt="tweet " />
+
+                    <div class="flex flex-wrap items-center justify-between w-full">
+                        <div
+                            class="flex items-center dark:text-white text-sm text-gray-400 hover:text-blue-400 dark:hover:text-blue-400">
+                            <i class="fa-solid fa-comment xl:mr-2  text-sm xl:text-lg"></i>
+                            <span>100</span>
+                        </div>
+
+                        <div class="flex items-center dark:text-white text-sm text-gray-500 hover:text-purple-500">
+                            <i class="fa-solid fa-retweet mr-2 text-sm xl:text-lg"></i>
+                            <span>1.5K</span>
+                        </div>
+
+                        <div class="flex items-center dark:text-white text-sm text-gray-500 hover:text-red-500">
+                            <i class="fa-solid fa-heart mr-2 text-sm xl:text-lg"></i>
+                            <span class=" "> 1.5M</span>
+                        </div>
+
+                        <div class="flex items-center dark:text-white text-sm text-gray-500 hover:text-green-500">
+                            <i class="fa-solid fa-share mr-2 text-sm xl:text-lg"></i>
+                            <span>1K</span>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+                <!-- ==================toggler=================== -->
+                <div class="mt-1 border border-gray-200 dark:border-dim-700 bg-gray-50 dark:bg-dim-300">
+                    <div
+                        class="text-center dark:bg-dim-900  border-b border-t bg-white border-gray-200 dark:border-dim-200">
+                        <h3 class="py-4 text-gray-900 xl:text-2xl capitalize dark:text-white ">customise your layout
+                        </h3>
+                        <p class="text-gray-500 mb-5 text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Voluptate in modi harum consequatur, illo earum est? Vitae voluptas debitis accusantium
+                            temporibus unde, culpa obcaecati aperiam optio quo tempore libero expedita?</p>
+
+                        <a href="#" id="toggle_dark_mode"
+                            class=" btn-primary w-11 h-11 mx-auto xl:w-48 flex justify-center items-center rounded-full  font-bold mb-5 ">
+                            <i class="fa-solid fa-cloud-moon block xl:hidden text-sm"></i>
+                            <span class=" capitalize text-sm font-bold dark:text-white hidden  xl:block">toggle dark
+                                mode</span>
+
+                        </a>
+
+
+                    </div>
+                </div>
+                <!-- ===============toggler======================  -->
+
+
+                <!-- ==================load more content spinner==================== -->
+                <div class="p-5 border border-gray-200 dark:border-gray-700">
+                    <svg class="w-8 h-8 mx-auto  animate-spin-fast">
+                        <circle cx="16" cy="16" fill="none" r="14" stroke-width="4"
+                            style="stroke: rgb(29, 161, 242); opacity: 0.2">
+                        </circle>
+                        <circle cx="16" cy="16" fill="none" r="14" stroke-width="4" style="
+                                stroke: rgb(29, 161, 242);
+                                stroke-dasharray: 80;
+                                stroke-dashoffset: 60;">
+                        </circle>
+                    </svg>
+
+                </div>
+                <!-- ===============load more content spinner=======================  -->
+
+            </div>
+            <!-- =================End user tweets section ========================  -->
+
+        </div>
+        <!-- =================End midddle part section ========================  -->
+
+
+        <div class="hidden xl:block w-[30%]">
+            <div class="relative m-2">
+                <i
+                    class="fa-solid fa-magnifying-glass text-gray-700 dark:text-white absolute left-4 top-1/2 -translate-y-1/2 "></i>
+                <input type="text"
+                    class="w-full bg-gray-200 dark:bg-dim-400 dark:text-white border-gray-200 dark:border-dim-400 text-gray-600  rounded-full pl-12 py-1  focus:outline-none text-sm placeholder:capitalize font-normal h-9"
+                    placeholder="search tweet">
+            </div>
+
+            <div class="bg-gray-50  dark:bg-dim-700 rounded-2xl m-2">
+                <h3 class=" text-gray-900  dark:text-white font-bold p-3 border-b border-gray-200 dark:border-dim-200">
+                    what's happening</h3>
+                <div class="p-3 border-b border-gray-200 dark:border-dim-200">
+                    <h4 class=" font-bold text-gray-900 dark:text-white">#India</h4>
+                    <p class="text-gray-500 text-xs">5.1M Tweets</p>
+                </div>
+
+                <div class="p-3 border-b border-gray-200 dark:border-dim-200">
+                    <h4 class=" font-bold text-gray-900 dark:text-white">#ISROChandrayaanLanded</h4>
+                    <p class="text-gray-500 text-xs">5.1M Tweets</p>
+                </div>
+
+                <div class="p-3 border-b border-gray-200 dark:border-dim-200">
+                    <h4 class=" font-bold text-gray-900 dark:text-white">#IsrailHaamasWar</h4>
+                    <p class="text-gray-500 text-xs">5.1M Tweets</p>
+                </div>
+
+                <div class="p-3 border-b border-gray-200 dark:border-dim-200">
+                    <h4 class=" font-bold text-gray-900 dark:text-white">#Worldcup2023</h4>
+                    <p class="text-gray-500 text-xs">5.1M Tweets</p>
+                </div>
+
+                <div class=" capitalize text-blue-500 p-3 cursor-pointer underline">
+                    show more
+                </div>
+
+            </div>
+
+            <div class="">
+                <h3 class=" text-gray-900  dark:text-white font-bold p-3 border-b border-gray-200 dark:border-dim-200">
+                    who to follow</h3>
+
+                <!-- ==================floowers================== -->
+                <div class="p-3 border-b border-gray-200 dark:border-dim-200 flex justify-between items-center">
+
+                    <div class="  flex-row gap-4 flex ">
+                        <img src="./assets/img/sonu.jpg" class="w-10 h-10 rounded-full" alt="">
+                        <div class="">
+                            <h4 class="capitalize text-gray-800 dark:text-white font-bold text-sm">prakaash dutt</h4>
+                            <p class=" capitalize text-gray-900 dark:text-gray-500 font-normal text-sm">@prakaash-dutt
+                            </p>
+                        </div>
+                    </div>
+
+                    <button type="button"
+                        class="text-sm font-bold text-blue-400 px-4 py-1  rounded-full border-2 border-blue-400">follow</button>
+                </div>
+                <!-- ===============floowers=====================  -->
+                <!-- ==================floowers================== -->
+                <div class="p-3 border-b border-gray-200 dark:border-dim-200 flex justify-between items-center">
+
+                    <div class="  flex-row gap-4 flex ">
+                        <img src="./assets/img/sonu.jpg" class="w-10 h-10 rounded-full" alt="">
+                        <div class="">
+                            <h4 class="capitalize text-gray-800 dark:text-white font-bold text-sm">rajni arya</h4>
+                            <p class=" capitalize text-gray-900 dark:text-gray-500 font-normal text-sm">@queengirk</p>
+                        </div>
+                    </div>
+
+                    <button type="button"
+                        class="text-sm font-bold text-blue-400 px-4 py-1  rounded-full border-2 border-blue-400">follow</button>
+                </div>
+                <!-- ===============floowers=====================  -->
+
+
+
+                <!-- ==================floowers================== -->
+                <div class="p-3 border-b border-gray-200 dark:border-dim-200 flex justify-between items-center">
+
+                    <div class="  flex-row gap-4 flex ">
+                        <img src="./assets/img/sonu.jpg" class="w-10 h-10 rounded-full" alt="">
+                        <div class="">
+                            <h4 class="capitalize text-gray-800 dark:text-white font-bold text-sm">himanshu morya</h4>
+                            <p class=" capitalize text-gray-900 dark:text-gray-500 font-normal text-sm">@morya56</p>
+                        </div>
+                    </div>
+
+                    <button type="button"
+                        class="text-sm font-bold text-blue-400 px-4 py-1  rounded-full border-2 border-blue-400">follow</button>
+                </div>
+                <!-- ===============floowers=====================  -->
+
+
+                <div class="p-5 border-b border-gray-200 dark:border-dim-200">
+                    <div class="flex gap-x-4">
+                        <div class=" rounded-full bg-gray-400 h-12 w-12"></div>
+                        <div class="flex-1 space-y-2 py-1">
+                            <div class="h-4 bg-gray-400 rounded w-5/6"></div>
+                            <div class="h-4 bg-gray-400 rounded w-5/6"></div>
+                            <div class="h-4 bg-gray-400 rounded w-5/6"></div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class=" capitalize text-blue-500 p-3 cursor-pointer underline">
+                    show more
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
